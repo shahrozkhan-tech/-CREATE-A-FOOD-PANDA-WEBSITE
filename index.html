@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOOD PANDA SERVICES</title>
+  <style>
+    header{
+      background-color: beige;
+      margin: -10px;
+      padding:10px;
+      height: 70px;
+      display: flex;
+     
+
+    }
+    .button{
+      margin-top:20px;
+     margin-left:70% ;
+    }
+    button{
+      background-color:rgb(219, 79, 125);
+      color:white ;
+      border: none;
+      border-radius:25px;
+      height:30px ;
+      font-family: sans-serif;
+    }
+    button:hover{
+      height: 40px;
+      background-color: white;
+      color: black;
+    }
+    .nav{
+      margin: -10px;
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+    }
+     
+    h2{
+      color: black;
+      cursor: pointer;
+    }
+    h2:hover{
+      background-color: rgb(228, 228, 228);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      
+    }
+    .grid {
+      margin:20px ;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+      }
+      .card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.info {
+  padding: 12px 15px;
+}
+.info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.info p {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 5px;
+}
+.rating {
+  color: #ff2b85;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.view-menu {
+  display: inline-block;
+  background: #ff2b85;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition:background 0.3s ease;
+}
+.view-menu:hover {
+  background: #e02070;
+}
+@media(max-width:768px) {
+  body { padding: 20px; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 15px; }
+}
+@media(max-width:480px) {
+  .grid { grid-template-columns: 1fr; }
+}
+    footer{
+      margin: -10px;
+      padding: 10px; 
+      font-family: sans-serif;
+      background-color:whitesmoke;
+      display: flex;
+       gap: 60px;
+    }
+    
+     .underline {
+            display: inline-block;
+            position: relative;
+            font-weight: bold;
+           
+        }
+        .underline::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right,black,rgb(233, 98, 143),black ); 
+            transition: width 0.3s ease-in;
+        }
+        .underline:hover::after {
+            width: 100%;
+        }
+        .footer{
+          display: flex;
+        }
+        .footer-t{
+          color:gray ;
+          cursor: pointer;
+          font-family: sans-serif;
+        }
+        .footer-t:hover{
+          color: black;
+           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+        }
+       
+    
+  </style>
+  </head>
+<body>
+  <header>
+    <img src="Assets/FoodPanda-logo-500x254.png" width="70px" height="50px" alt="">
+    <div class="button"><button>login</button>
+    <button>sign up for free delivery</button></div>
+
+  </header>
+  <section class="nav">
+    <h2 class="abc">Delivery</h2>
+    <h2>Pick-up</h2>
+    <h2>Shops</h2>
+    <h2>caterers</h2>
+    </section>
+    <section class="Cards">
+      <div class="grid">
+  <div class="card">
+    <img src="https://media.istockphoto.com/id/509568543/photo/indian-food.jpg?s=1024x1024&w=is&k=20&c=XNn5yNYU1yNo8smbLLK7Klef7oV7e1ZBJTOqwWxlZUU=" alt="Biryani Hub">
+    <div class="info">
+      <h4>Biryani Hub</h4>
+      <p class="rating">⭐ 4.6 (1K+)</p>
+      <p>Pakistani • Rs 179</p>
+      <button class="view-menu">View Menu</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1703073186159-ae38e1c42dee?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470" alt="Pizza Mania">
+    <div class="info">
+      <h4>Pizza Mania</h4>
+      <p class="rating">⭐ 4.4 (900+)</p>
+      <p>Fast Food • Rs 249</p>
+      <button class="view-menu">View Menu</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS97hOaEmz1bPyMLXDjS9MOUDcOHwuCwItrf6PuDhZa9KO7lqKcwiEy54nc4tGXXT0dRHI&usqp=CAU" alt="Spice Route">
+    <div class="info">
+      <h4>Spice Route</h4>
+      <p class="rating">⭐ 4.7 (700+)</p>
+      <p>Indian • Rs 299</p>
+      <button class="view-menu">View Menu</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.squarespace-cdn.com/content/v1/60ec860f2e90ab0eabf1ef97/1664894523701-WSP81RJHQKEARJPJL35E/5+tips+to+manage+sugar+cravings+during+pregnancy" alt="Sweet Cravings">
+    <div class="info">
+      <h4>Sweet Cravings</h4>
+      <p class="rating">⭐ 4.8 (300+)</p>
+      <p>Desserts • Rs 199</p>
+      <button class="view-menu">View Menu</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6XJnO5vcpYzGGBujOqBo_0btnyURfLX3VPQ&s" alt="Cafe Bliss">
+    <div class="info">
+      <h4>Cafe Bliss</h4>
+      <p class="rating">⭐ 4.5 (500+)</p>
+      <p>Cafe • Rs 150</p>
+      <button class="view-menu">View Menu</button>
+    </div>
+  </div>
+  <div class="card"><img src="https://www.datocms-assets.com/129288/1725461261-big-juicy-burgers.jpg?auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&ar=1:1&w=1024&h=1024" alt="Burger Point">
+    <div class="info"><h4>Burger Point</h4><p class="rating">⭐ 4.3 (800+)</p><p>Fast Food • Rs 220</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://carolinarice.com/wp-content/uploads/2019/05/Vegetarian-Sushi-Rolls-with-Soy-Sauce.jpg" alt="Sushi World">
+    <div class="info"><h4>Sushi World</h4><p class="rating">⭐ 4.7 (450+)</p><p>Japanese • Rs 350</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKhYpD-NsVXKNOd9NA0xl6uywbbAnwxUzOF3hVVc5evl2J58ZvjHtYt2-0feP3C_vlqWg&usqp=CAU" alt="Taco Fiesta">
+    <div class="info"><h4>Taco Fiesta</h4><p class="rating">⭐ 4.5 (600+)</p><p>Mexican • Rs 200</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfW0gGFieVorljuItzNwm4xQsPKhqWctHGhA&s" alt="Healthy Bowl">
+    <div class="info"><h4>Healthy Bowl</h4><p class="rating">⭐ 4.6 (350+)</p><p>Salads • Rs 180</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://thecircleofaroma.in/cdn/shop/files/picture-steaming-cup-coffee-perfect-coffee-lovers-can-be-used-illustrate-concept-cozy-morning-caffeine-addiction-warm-beverage.jpg?v=1719467884&width=1500" alt="Coffee Corner">
+    <div class="info"><h4>Coffee Corner</h4><p class="rating">⭐ 4.7 (400+)</p><p>Cafe • Rs 120</p><button class="view-menu">View Menu</button></div></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_JPaCo2Fu7Cait_JuSH-hV2j1zvsbbAVeg&s" alt="Pasta House"><div class="info"><h4>Pasta House</h4><p class="rating">⭐ 4.5 (650+)</p><p>Italian • Rs 320</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://tb-static.uber.com/prod/image-proc/processed_images/b64bb88fdeaad49557ac3655198f733e/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg" alt="Noodle Express"><div class="info"><h4>Noodle Express</h4><p class="rating">⭐ 4.4 (700+)</p><p>Asian • Rs 210</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://images.squarespace-cdn.com/content/v1/5fcdb370ea95a9497c028e1a/1607319367850-VDJU5KNDHS0UHVZWMOM7/IMG_1970+2.JPG" alt="Grill Master"><div class="info"><h4>Grill Master</h4><p class="rating">⭐ 4.6 (500+)</p><p>BBQ • Rs 350</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtOZAC6qCl2Qq1WfyEHdaWiyxsduRHTJVzKw&s" alt="Vegan Delight"><div class="info"><h4>Vegan Delight</h4><p class="rating">⭐ 4.8 (420+)</p><p>Vegan • Rs 190</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyrNPYhhUB3UhsD2vpb5ePRpirDhjVUne2A&s" alt="Seafood Shack"><div class="info"><h4>Seafood Shack</h4><p class="rating">⭐ 4.5 (380+)</p><p>Seafood • Rs 400</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgq0r8tMMPoV1wUUP05eK0iTJE_YNjhGk33A&s" alt="Dessert Haven"><div class="info"><h4>Dessert Haven</h4><p class="rating">⭐ 4.7 (330+)</p><p>Desserts • Rs 220</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqPazBk5Wf_khp4GDEnh8GEH-pHk8nhBfuxA&s" alt="BBQ King"><div class="info"><h4>BBQ King</h4><p class="rating">⭐ 4.6 (480+)</p><p>BBQ • Rs 360</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjZdQY0Q9xOr7PQS4C8J3Evm4jPjUK8Abmg&s" alt="Wrap Station"><div class="info"><h4>Wrap Station</h4><p class="rating">⭐ 4.4 (520+)</p><p>Fast Food • Rs 200</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHBaJwwCvlhg7ZgSEnskQVKXHuYnH829aPmQ&s" alt="Pizza Express"><div class="info"><h4>Pizza Express</h4><p class="rating">⭐ 4.5 (600+)</p><p>Fast Food • Rs 260</p><button class="view-menu">View Menu</button></div></div>
+  <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxr3FOiM9LO-k3MXPGScvuY3RwzZOoPeHGwA&s" alt="Coffee & Cake"><div class="info"><h4>Coffee & Cake</h4><p class="rating">⭐ 4.7 (400+)</p><p>Cafe • Rs 150</p><button class="view-menu">View Menu</button></div></div>
+</div>
+    </section>
+<footer>
+<section>
+  <h4 class="footer-t">foodpanda</h4>
+</section>
+<section class="sec1">
+  
+ 
+   <div class="underline">Press</div>
+   <br>
+   <br>
+   
+   <div class="underline">pandapay Terms and conditions</div>
+   <br>
+   <br>
+   <div class="underline">Security</div>
+   <br>
+   <br>
+   <div class="underline">Careers</div>
+   <br>
+   <br>
+   <div class="underline">Cashback Terms and conditions</div>
+   <br>
+   <br>
+   <div class="underline">Partner with Us</div>
+   <br>
+   <br>
+   <div class="underline">All Cities</div>
+   <br>
+   <br>
+   <div class="underline">pandapro-monthly subsciption programme</div>
+   <br>
+   <br>
+   <div class="underline">Ramzan deals</div>
+   <br>
+   <br>
+   <div class="underline">Areas delivery in lahore</div>
+   <br>
+   <br>
+  </section>
+  <section class="sec2">
+    <div class="underline">Helps center</div>
+   <br>
+   <br>
+    <div class="underline">Terms and conditions</div>
+   <br>
+   <br>
+    <div class="underline">Download foodpanda Apps</div>
+   <br>
+   <br>
+    <div class="underline">Suggest a Resturant</div>
+   <br>
+   <br>
+    <div class="underline">All cuisines</div>
+   <br>
+   <br>
+   <div class="underline">pandago-Request a Ride</div>
+   <br>
+   <br>
+    <div class="underline">Undate on COVID-19 in Pakistan</div>
+   <br>
+   <br>
+    <div class="underline">foodpanda Hme Chef</div>
+   <br>
+   <br>
+    <div class="underline">Areas Delivery in Karachi</div>
+   <br>
+   <br>
+    <div class="underline">Areas Delivery in Islamabad</div>
+   <br>
+   <br>
+</section>
+<section class="sec3">
+  <div class="underline">Refunds with pandapay</div>
+   <br>
+   <br>
+   <div class="underline">Privacy Policy</div>
+   <br>
+   <br>
+   <div class="underline">Human right policy</div>
+   <br>
+   <br>
+   <div class="underline">Coporate Custumer</div>
+   <br>
+   <br>
+   <div class="underline">foodpanda Magazine</div>
+   <br>
+   <br>
+   <div class="underline">foodpanda Vouchers & Coupons</div>
+   <br>
+   <br>
+   <div class="underline">pandamart Grocery Delivery</div>
+   <br>
+   <br>
+   <div class="underline">Become an Affilliate</div>
+   <br>
+   <br>
+   <div class="underline">Areas delivery in Gujranwala</div>
+   <br>
+   <br>
+   <div class="underline">Areas delivery in Peshawar</div>
+   <br>
+   <br>
+
+</section>
+</footer>
+<section class="footer2">
+  <hr>
+  <img src="Assets/FoodPanda-logo-500x254.png" width="70px" height="50px"  alt="">
+  <h3 style="color:red;">Delivery Hero</h3>
+</section>
+ 
+</body>
+</html>
